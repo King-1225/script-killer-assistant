@@ -1,0 +1,40 @@
+/* AIAssistant Page Styles */
+
+.ai-assistant-header {
+  background: linear-gradient(135deg, #1890ff 0%, #36cfc9 100%);
+  color: white;
+}
+
+.ai-assistant-header h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.ai-intro-card {
+  margin-bottom: 24px;
+}
+
+.ai-features-section {
+  margin-top: 24px;
+}
+
+.ai-feature-card {
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.ai-feature-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.ai-result {
+  line-height: 1.8;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.ai-assistant-panel {
+  min-height: 400px;
+}

@@ -1,0 +1,181 @@
+/* 测试模拟器页面样式 */
+.test-simulation-container {
+  padding: 0;
+}
+
+.simulation-tabs {
+  margin-top: 24px;
+}
+
+/* 玩家视角样式 */
+.player-script-viewer {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.player-script-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 16px;
+}
+
+.player-script-content {
+  min-height: 300px;
+  padding: 16px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 模拟控制器样式 */
+.simulation-controls {
+  margin-bottom: 24px;
+}
+
+.progress-bar-container {
+  position: relative;
+  height: 24px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 8px 0 16px;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #1890ff 0%, #52c41a 100%);
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.log-container {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 12px;
+  height: 200px;
+  overflow-y: auto;
+  background-color: #fafafa;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* 时长计算器样式 */
+.duration-calculator .ant-slider {
+  margin: 8px 0 16px;
+}
+
+.duration-breakdown .ant-table {
+  margin-top: 16px;
+}
+
+/* 难度评分样式 */
+.difficulty-score {
+  margin: 16px 0 24px;
+}
+
+.difficulty-score .ant-rate {
+  margin-left: 8px;
+}
+
+.difficulty-breakdown .ant-table {
+  margin-top: 16px;
+}
+
+/* 反馈收集样式 */
+.feedback-list .ant-table {
+  margin-top: 16px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .test-simulation-container {
+    padding: 0;
+  }
+  
+  .player-script-content {
+    min-height: 200px;
+  }
+  
+  .log-container {
+    height: 150px;
+  }
+}
+
+/* 模拟动画效果 */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.simulation-controls button:disabled {
+  animation: pulse 1.5s infinite;
+}
+
+/* 滚动条样式 */
+.log-container::-webkit-scrollbar,
+.player-script-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.log-container::-webkit-scrollbar-track,
+.player-script-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.log-container::-webkit-scrollbar-thumb,
+.player-script-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.log-container::-webkit-scrollbar-thumb:hover,
+.player-script-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 表格样式优化 */
+.duration-breakdown .ant-table-thead > tr > th,
+.difficulty-breakdown .ant-table-thead > tr > th,
+.feedback-list .ant-table-thead > tr > th {
+  background-color: #fafafa;
+}
+
+/* 表单样式优化 */
+.simulation-tabs .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+/* 卡片阴影效果 */
+.simulation-tabs .ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.simulation-tabs .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}

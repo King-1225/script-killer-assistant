@@ -1,0 +1,306 @@
+/* AI助手面板样式 */
+
+.ai-assistant-panel {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.ai-assistant-panel .ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ai-assistant-panel .ant-card-head {
+  background-color: #e6f7ff;
+  border-bottom: 1px solid #91d5ff;
+}
+
+.ai-assistant-panel .ant-card-head-title {
+  color: #0050b3;
+  font-weight: 600;
+}
+
+.ai-assistant-panel .ant-tabs {
+  margin-top: 16px;
+}
+
+.ai-assistant-panel .ant-tabs-tab {
+  font-weight: 500;
+  padding: 12px 24px;
+}
+
+.ai-assistant-panel .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+.ai-assistant-panel .ant-tabs-ink-bar {
+  background-color: #1890ff;
+  height: 3px;
+}
+
+.ai-assistant-panel .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.ai-assistant-panel .ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.ai-assistant-panel .ant-input,
+.ai-assistant-panel .ant-select-selector,
+.ai-assistant-panel .ant-input-textarea {
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.ai-assistant-panel .ant-input:focus,
+.ai-assistant-panel .ant-select-selector:focus-within,
+.ai-assistant-panel .ant-input-textarea:focus {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.ai-assistant-panel .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  font-weight: 500;
+  padding: 6px 24px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.ai-assistant-panel .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+}
+
+.ai-assistant-panel .ant-btn-primary:active {
+  transform: translateY(0);
+}
+
+.ai-assistant-panel .ant-btn-primary[disabled] {
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+/* 嵌套标签页样式 */
+.ai-assistant-panel .ant-tabs > .ant-tabs-nav {
+  margin-bottom: 20px;
+}
+
+.ai-assistant-panel .ant-tabs > .ant-tabs-nav .ant-tabs-tab {
+  padding: 8px 20px;
+}
+
+/* 结果展示区域 */
+.ai-result {
+  line-height: 1.8;
+  color: #262626;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.ai-result strong {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+.ai-result em {
+  color: #52c41a;
+  font-style: normal;
+}
+
+.ai-result ul,
+.ai-result ol {
+  padding-left: 24px;
+}
+
+.ai-result li {
+  margin-bottom: 8px;
+}
+
+.ai-result h1,
+.ai-result h2,
+.ai-result h3,
+.ai-result h4,
+.ai-result h5,
+.ai-result h6 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #000000d9;
+}
+
+/* 加载状态样式 */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+}
+
+.loading-overlay .ant-spin {
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.loading-overlay .ant-spin-tip {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #1890ff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .ai-assistant-panel .ant-card {
+    margin: 0 -16px;
+    border-radius: 0;
+  }
+  
+  .ai-assistant-panel .ant-tabs-tab {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .ai-assistant-panel .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .loading-overlay .ant-spin {
+    margin: 0 24px;
+    padding: 24px;
+  }
+}
+
+/* 滚动条样式 */
+.ai-assistant-panel ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.ai-assistant-panel ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.ai-assistant-panel ::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.ai-assistant-panel ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 标签页动画效果 */
+.ai-assistant-panel .ant-tabs-tabpane {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 按钮组样式优化 */
+.ai-assistant-panel .ant-space-item {
+  flex-shrink: 0;
+}
+
+/* 输入框占位符样式 */
+.ai-assistant-panel ::placeholder {
+  color: #bfbfbf;
+  font-size: 13px;
+}
+
+/* 辅助文本样式 */
+.ai-assistant-panel .ant-form-item-explain,
+.ai-assistant-panel .ant-form-item-extra {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+/* AI助手面板样式优化 */
+.ai-assistant-container {
+  margin-bottom: 0;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.ai-tabs {
+  margin-bottom: 0;
+}
+
+.nested-tabs {
+  margin-top: 16px;
+}
+
+/* 紧凑表单样式 */
+.compact-form-item {
+  margin-bottom: 12px !important;
+}
+
+.compact-form-item .ant-form-item-label {
+  padding-bottom: 4px !important;
+}
+
+/* 结果卡片样式 */
+.result-card {
+  margin-top: 0;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.placeholder-card {
+  border-radius: 4px;
+  min-height: 120px;
+}
+
+/* 优化按钮间距 */
+.ant-form-item-control-input-content {
+  display: flex;
+  gap: 8px;
+}
+
+.ant-form-item-control-input-content > button {
+  flex-shrink: 0;
+}
+
+/* 优化标签页切换动画 */
+.ant-tabs-tab {
+  padding: 10px 16px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .ai-assistant-container {
+    padding: 12px;
+  }
+  
+  .compact-form-item {
+    margin-bottom: 10px !important;
+  }
+}

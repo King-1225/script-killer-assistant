@@ -1,0 +1,110 @@
+.story-outline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.outline-tabs {
+  margin-top: 24px;
+}
+
+.outline-tabs .ant-tabs-tab {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.outline-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  color: #1890ff;
+}
+
+.outline-tabs .ant-tabs-content-holder {
+  min-height: 400px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-top: 8px;
+}
+
+.outline-tabs .ant-tabs-content {
+  padding: 24px;
+}
+
+.outline-footer {
+  margin-top: 24px;
+  padding: 16px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.menu-group-title {
+  font-weight: 600;
+  color: #666;
+  font-size: 12px;
+}
+
+.story-outline-container .ant-card {
+  margin-bottom: 16px;
+}
+
+.story-outline-container .ant-input,
+.story-outline-container .ant-input-textarea {
+  border-radius: 6px;
+}
+
+/* 章节结构树形图样式 */
+.chapter-tree {
+  margin-top: 16px;
+}
+
+.chapter-item {
+  margin: 8px 0;
+  padding: 8px;
+  border-left: 3px solid #1890ff;
+  background: #f7f7f7;
+  border-radius: 0 4px 4px 0;
+}
+
+.sub-chapter-item {
+  margin-left: 24px;
+  border-left-color: #52c41a;
+}
+
+/* 主题标签样式 */
+.theme-tag {
+  margin: 4px;
+  cursor: pointer;
+}
+
+.theme-tag:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+/* 灵感碎片样式 */
+.inspiration-item {
+  transition: all 0.3s;
+}
+
+.inspiration-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 核心诡计记录卡样式 */
+.trick-card {
+  border-left: 4px solid #ff4d4f;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .story-outline-container {
+    padding: 0 16px;
+  }
+  
+  .outline-tabs .ant-tabs-content {
+    padding: 16px;
+  }
+  
+  .outline-tabs .ant-tabs-tab {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,192 @@
+/* 项目设置页面样式 */
+.project-settings-container {
+  padding: 0;
+}
+
+.settings-tabs {
+  margin-top: 24px;
+}
+
+/* 表单样式优化 */
+.settings-tabs .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.settings-tabs .ant-form-item {
+  margin-bottom: 24px;
+}
+
+/* 协作管理样式 */
+.collaboration-section .ant-table {
+  margin-top: 16px;
+}
+
+.member-info {
+  display: flex;
+  align-items: center;
+}
+
+.add-member-form {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 备份部分样式 */
+.backup-section {
+  padding: 0;
+}
+
+.backup-actions {
+  margin-bottom: 32px;
+}
+
+.backup-actions .ant-btn {
+  margin-bottom: 8px;
+}
+
+.import-export {
+  margin-bottom: 24px;
+}
+
+.upload-section,
+.restore-section {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.upload-section .ant-upload,
+.restore-section .ant-upload {
+  margin-left: 16px;
+}
+
+.backup-history {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.backup-history .ant-table {
+  margin-top: 16px;
+}
+
+/* 表格样式优化 */
+.settings-tabs .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 500;
+}
+
+.settings-tabs .ant-table-tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* 卡片阴影效果 */
+.settings-tabs .ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.settings-tabs .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 按钮组样式 */
+.settings-tabs .ant-btn-group {
+  margin-right: 8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .project-settings-container {
+    padding: 0;
+  }
+  
+  .add-member-form .ant-form-inline .ant-form-item {
+    display: block;
+    margin-bottom: 16px;
+  }
+  
+  .upload-section,
+  .restore-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .upload-section .ant-upload,
+  .restore-section .ant-upload {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  
+  .settings-tabs .ant-tabs-nav {
+    margin-bottom: 16px;
+  }
+}
+
+/* 标签样式 */
+.settings-tabs .ant-tag {
+  margin-right: 0;
+}
+
+/* 输入框样式 */
+.settings-tabs .ant-input,
+.settings-tabs .ant-select-selector,
+.settings-tabs .ant-input-number {
+  border-radius: 4px;
+}
+
+/* 开关样式 */
+.settings-tabs .ant-switch {
+  margin-top: 4px;
+}
+
+/* 标题样式 */
+.settings-tabs .ant-typography {
+  margin-bottom: 16px;
+}
+
+/* 分隔符样式 */
+.settings-tabs .ant-divider {
+  margin: 24px 0;
+}
+
+/* 加载状态样式 */
+.settings-tabs .ant-spin {
+  display: block;
+  margin: 24px 0;
+}
+
+/* 错误提示样式 */
+.settings-tabs .ant-alert {
+  margin-bottom: 16px;
+}
+
+/* 确认对话框样式 */
+.settings-tabs .ant-modal-footer {
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 工具提示样式 */
+.settings-tabs .ant-tooltip-inner {
+  max-width: 300px;
+}
+
+/* 滚动条样式 */
+.settings-tabs ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.settings-tabs ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.settings-tabs ::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.settings-tabs ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
